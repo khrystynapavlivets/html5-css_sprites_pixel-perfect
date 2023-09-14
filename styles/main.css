@@ -1,0 +1,561 @@
+@import url(./reset.css);
+@import url(./fonds.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 1440px;
+  height: 125px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header-logo {
+  margin-top: 7px;
+}
+
+.dropdown {
+  position: absolute;
+  bottom: 45px;
+  left: 48px;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.uil {
+  cursor: pointer;
+  border: none;
+  color: #000;
+  background-color: #fff;
+  position: relative;
+}
+
+.dropdown::before {
+  content: "\e9b8";
+  font-family: unicons-line;
+  font-style: normal;
+  font-weight: 400;
+  display: block;
+  text-decoration: inherit;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 35px;
+  display: none;
+  position: absolute;
+  left: -3px;
+  top: 2px;
+}
+
+i:hover .dropdown {
+  display: none;
+}
+
+i:hover::before {
+  content: "\e9b8";
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  width: 344px;
+  height: 359px;
+  background: #ffffff;
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.1);
+  padding-top: 52px;
+  padding-left: 66px;
+  position: absolute;
+  top: 32px;
+  left: 20px;
+  text-align: left;
+}
+
+.dropdown-content a {
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px;
+  text-decoration-line: underline;
+  color: #000;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover i::before {
+  content: "\e9b8";
+}
+
+.slider {
+  width: 1440px;
+  height: 570px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.slider-left {
+  width: 720px;
+  height: 100%;
+  background-image: url(./photos/philip-martin-5aGUyCW_PJw-unsplash.png);
+}
+
+.slider-right {
+  width: 720px;
+  height: 100%;
+  background-color: #000;
+}
+
+.block-text {
+  width: 503px;
+  height: 309px;
+  margin: 110px 110px 151px 108px;
+  display: flex;
+  align-content: space-around;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-top {
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 500;
+  width: 136px;
+  height: 21px;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 7px;
+  margin-left: 2px;
+}
+
+.text-uppercase {
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  margin-top: -3px;
+  width: 75px;
+  height: 24px;
+}
+
+.middle-content {
+  margin-top: 5px;
+  width: 503px;
+  height: 113px;
+}
+
+h1 {
+  font-family: "Kanit-Medium";
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  text-transform: uppercase;
+  margin-top: 4px;
+  text-align: justify;
+  word-spacing: 3px;
+}
+
+.text-content {
+  font-family: "Kanit-ExtraLight";
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 29px;
+  word-spacing: 3.8px;
+}
+
+.text-buttom {
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  width: 198px;
+  height: 55px;
+  background-color: #000;
+  word-spacing: 1px;
+  transition-duration: 0.2s;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.text-buttom:hover {
+  border: 2px solid #fff;
+  font-size: 13px;
+}
+
+.featured-header {
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 59px;
+  margin-left: 149px;
+  margin-bottom: 30px;
+}
+
+.featured {
+  display: flex;
+}
+
+.featured-left {
+  width: 557px;
+  height: 368px;
+  margin: 0px 27px 0px 149px;
+}
+
+.featured-right {
+  margin: 0px 150px 0px 0px;
+  width: 557px;
+  height: 368px;
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+
+.date-bottom {
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 6px;
+  color: #000000;
+  width: 117px;
+  height: 18px;
+  margin-top: -3px;
+  margin-left: 1px;
+}
+
+.text-uppercase-bottom {
+  width: 57px;
+  height: 18px;
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  text-decoration-line: underline;
+  color: #000000;
+  width: 57px;
+  height: 18px;
+}
+
+.text-bottom-content-bold {
+  width: 557px;
+  height: 72px;
+  margin-top: 31px;
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #1f1f1d;
+  word-spacing: 0.4ch;
+}
+
+.text-bottom-content {
+  width: 557px;
+  height: 54px;
+  margin-top: 19px;
+  font-family: "Kanit-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1f1f1d;
+}
+
+.featured-bottom {
+  display: flex;
+  margin: 0px 135.5px 0px 134.5px;
+}
+
+.featured-left-bottom,
+.featured-middle-bottom,
+.featured-right-bottom {
+  width: 363px;
+  height: 240px;
+  margin: 286px 13.5px 18px 13.5px;
+}
+
+.content-bottom-photo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.date-bottom-right {
+  width: 117px;
+  height: 18px;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 6px;
+  color: #1f1f1d;
+  font-family: "Kanit-Regular";
+  margin-top: -3px;
+  margin-left: 4px;
+  word-spacing: 0.2ch;
+}
+
+.text-uppercase-bottom-left {
+  width: 57px;
+  height: 18px;
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  text-decoration-line: underline;
+  color: #000000;
+  margin-right: 6px;
+  margin-top: -1px;
+  word-spacing: 0.4ch;
+}
+
+.text-bottom-bold {
+  width: 363px;
+  height: 27px;
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #1f1f1d;
+  margin-top: 26px;
+  word-spacing: 0.2ch;
+  text-align: justify;
+  margin-left: 2.5px;
+}
+
+.button {
+  margin: 132px 600px 71px 604px;
+  width: 238px;
+  height: 42px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+}
+
+.issue,
+.news-bottom {
+  display: flex;
+}
+
+.photo-magazine {
+  width: 571.5px;
+  height: 360px;
+  margin-left: 148px;
+}
+
+.block-issue {
+  width: 571.5px;
+  height: 360px;
+  background-color: #000;
+}
+
+.text-issue {
+  width: 335px;
+  height: 51px;
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 51px;
+  color: #ffffff;
+  margin: 124px 120px 20px 116px;
+  word-spacing: 0.2ch;
+}
+
+.button-subscribe {
+  transition-duration: 0.2s;
+  border: 1px solid #fff;
+  cursor: pointer;
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  width: 198px;
+  height: 42px;
+  background-color: #000;
+  word-spacing: 1px;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0px 187px 123px 187px;
+}
+
+.interviews-header {
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1f1f1d;
+  margin-top: 63px;
+  margin-left: 151px;
+  word-spacing: 0.5ch;
+  text-align: justify;
+}
+
+.interviews-bottom {
+  display: flex;
+}
+
+.interviews-left-bottom,
+.interviews-middle-bottom,
+.interviews-right-bottom,
+.news-left-bottom,
+.news-middle-bottom,
+.news-right-bottom {
+  width: 363px;
+  height: 240px;
+  margin-top: 32px;
+  margin-right: 28px;
+}
+
+.interviews-bottom,
+.news-bottom {
+  margin-left: 148px;
+}
+
+.interviews-buttom {
+  margin: 123px 600px 32px 604px;
+  width: 238px;
+  height: 42px;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000;
+  word-spacing: 1px;
+  transition-duration: 0.2s;
+  border: 1px solid #fff;
+}
+
+.interviews-buttom:hover {
+  border: 2px solid #fff;
+  font-size: 13px;
+}
+
+.news-header {
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1f1f1d;
+  margin-left: 150px;
+}
+
+.news-buttom {
+  margin: 116px 600px 46px 604px;
+  width: 238px;
+  height: 42px;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000;
+  word-spacing: 1px;
+  transition-duration: 0.2s;
+  border: 1px solid #fff;
+}
+
+.news-buttom:hover {
+  border: 2px solid #fff;
+  font-size: 13px;
+}
+
+.footer-block {
+  width: 1440px;
+  height: 163px;
+  background: #000000;
+}
+
+.black-block {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: end;
+  height: 140px;
+  margin-top: 55px;
+}
+
+.text-footer {
+  font-family: "Kanit-Regular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-align: center;
+  align-items: flex-end;
+  margin-top: 38px;
+}
+
+.empty-block {
+  height: 23px;
+  background-color: #fff;
+}

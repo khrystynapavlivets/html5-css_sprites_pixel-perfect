@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Kanit-ExtraLight";
+    src: url(../fonds/Kanit/Kanit-ExtraLight.ttf);
+}
+@font-face {
+    font-family: "Kanit-Light";
+    src: url(../fonds/Kanit/Kanit-Light.ttf);
+}
+@font-face {
+    font-family: "Kanit-Medium";
+    src: url(../fonds/Kanit/Kanit-Medium.ttf);
+}
+@font-face {
+    font-family: "Kanit-Bold";
+    src: url(../fonds/Kanit/Kanit-Bold.ttf);
+}
+@font-face {
+    font-family: "Kanit-ExtraBold";
+    src: url(../fonds/Kanit/Kanit-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Kanit-Regular";
+    src: url(../fonds/Kanit/Kanit-Regular.ttf);
+}
+@font-face {
+    font-family: "Kanit-Thin";
+    src: url(../fonds/Kanit/Kanit-Thin.ttf);
+}
